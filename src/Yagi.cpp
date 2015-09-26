@@ -40,6 +40,7 @@ void YagiApp::draw(){
     
     drawRects();
     drawCircles();
+    runLights();
 
     
 }
@@ -79,8 +80,9 @@ void YagiApp::drawCircles(){
     //draw circle
     for(int i=0;i<CIRCLE_NUM; i++){
         float adsr_val = adsr[i].update();
+        adsr_now[i] = adsr_val;
+
         ofSetColor(255*adsr_val,255*adsr_val,255*adsr_val,220*adsr_val);
-//                ofSetColor(255,255,255,220);
 
         float circle_x = (CIRCLE_MARGIN*i)+(SC_MARGIN_WIDTH+CIRCLE_SIZE);
         float row = 0;
@@ -89,9 +91,53 @@ void YagiApp::drawCircles(){
             circle_x -= CIRCLE_MARGIN*CIRCLE_COLUMN;
         }
         ofCircle(circle_x, CIRCLE_MARGIN*row+CIRCLE_MARGIN_TOP, CIRCLE_SIZE*adsr_val);
-//        ofCircle(circle_x, CIRCLE_MARGIN*row+CIRCLE_MARGIN_TOP, CIRCLE_SIZE);
         
-//        cout << "ADSR:" << i << "---" << adsr_val << endl;;
+    }
+    
+    
+}
+
+void YagiApp::runLights(){
+    
+    //draw circle
+    for(int i=0;i<CIRCLE_NUM; i++){
+        
+        
+        int bulb_id = 0;
+        switch(i){
+                
+            case 0:
+                bulb_id = BLB1;
+
+            case 1:
+                bulb_id = BLB2;
+
+            case 2:
+                bulb_id = BLB3;
+
+            case 3:
+                bulb_id = BLB4;
+
+            case 4:
+                bulb_id = BLB5;
+
+            case 5:
+                bulb_id = BLB6;
+
+            case 6:
+                bulb_id = BLB7;
+
+            case 7:
+                bulb_id = BLB8;
+                
+        }
+        
+        
+        
+//        dmx.trigger(node_e node, note_type_e note_type, adsr_now[i]);
+//        int num=ofRandom(8);
+        dmx.simpleTrigger(bulb_id, adsr_now[i]);
+        
     }
     
     
@@ -151,6 +197,8 @@ void YagiApp::event(event_type tag, void *param){
         setAdsrWithDuration(tmp_note, &param);
 
         //Trigger circle with specified ADSR
+//        int foo = ofRandom(7);
+//       cout << "CH----" << foo << endl;
         adsr[num].setup(param);
         adsr[num].bang();
         

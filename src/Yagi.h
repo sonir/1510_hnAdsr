@@ -28,6 +28,7 @@
 #include "SeqManager.h"
 #include "slAdsr.h"
 #include "setup.h"
+#include "Dmx.hpp"
 
 
 class YagiApp : public slAppManager, slObserver {
@@ -37,16 +38,18 @@ class YagiApp : public slAppManager, slObserver {
         void setup();
         void update();
         void draw();
-    
         void event(event_type tag, void *param); //Invoke from slNotice
 
     
     private:
         void drawRects();
         void drawCircles();
+        void runLights();
         slNotice *notice;
         slAdsr adsr[CIRCLE_NUM];
+        float adsr_now[CIRCLE_NUM];
         color_e sc_color;
+        Dmx dmx;
 
     
 };

@@ -42,6 +42,8 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		F212F7941BB59D2200D2248A /* Dmx.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F212F78F1BB59D2200D2248A /* Dmx.cpp */; settings = {ASSET_TAGS = (); }; };
+		F212F7951BB59D2200D2248A /* hnDmxMng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F212F7911BB59D2200D2248A /* hnDmxMng.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21913641BB3286500DC04B5 /* Desitination.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21913491BB3286500DC04B5 /* Desitination.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21913651BB3286500DC04B5 /* slOscManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F219134B1BB3286500DC04B5 /* slOscManager.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21913821BB3287B00DC04B5 /* slAdsr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F219136C1BB3287B00DC04B5 /* slAdsr.cpp */; settings = {ASSET_TAGS = (); }; };
@@ -147,6 +149,12 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		F212F78D1BB59D2200D2248A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F212F78F1BB59D2200D2248A /* Dmx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dmx.cpp; sourceTree = "<group>"; };
+		F212F7901BB59D2200D2248A /* Dmx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dmx.hpp; sourceTree = "<group>"; };
+		F212F7911BB59D2200D2248A /* hnDmxMng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hnDmxMng.cpp; sourceTree = "<group>"; };
+		F212F7921BB59D2200D2248A /* hnDmxMng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hnDmxMng.h; sourceTree = "<group>"; };
+		F212F7931BB59D2200D2248A /* portSetup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = portSetup.h; sourceTree = "<group>"; };
 		F21913491BB3286500DC04B5 /* Desitination.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Desitination.cpp; sourceTree = "<group>"; };
 		F219134A1BB3286500DC04B5 /* Desitination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Desitination.h; sourceTree = "<group>"; };
 		F219134B1BB3286500DC04B5 /* slOscManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slOscManager.cpp; sourceTree = "<group>"; };
@@ -172,7 +180,6 @@
 		F21914611BB32D2900DC04B5 /* Receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Receiver.cpp; sourceTree = "<group>"; };
 		F21914621BB32D2900DC04B5 /* Receiver.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Receiver.hpp; sourceTree = "<group>"; };
 		F21914631BB32D2900DC04B5 /* setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setup.h; sourceTree = "<group>"; };
-		F21914641BB32D2900DC04B5 /* stino.settings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stino.settings; sourceTree = "<group>"; };
 		F21914671BB32D2900DC04B5 /* Yagi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Yagi.cpp; sourceTree = "<group>"; };
 		F21914681BB32D2900DC04B5 /* Yagi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Yagi.h; sourceTree = "<group>"; };
 		F219146F1BB32D5F00DC04B5 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
@@ -297,6 +304,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				F212F78C1BB59D2200D2248A /* hnDmxMng */,
 				E6053AB7FEC63D5F83825B88 /* ofxOsc */,
 				F21913091BB3286500DC04B5 /* slOscManager */,
 				1F4FB5C423662B96ADFDCC0B /* ofxXmlSettings */,
@@ -409,7 +417,6 @@
 				F21914611BB32D2900DC04B5 /* Receiver.cpp */,
 				F21914621BB32D2900DC04B5 /* Receiver.hpp */,
 				F21914631BB32D2900DC04B5 /* setup.h */,
-				F21914641BB32D2900DC04B5 /* stino.settings */,
 				F21914671BB32D2900DC04B5 /* Yagi.cpp */,
 				F21914681BB32D2900DC04B5 /* Yagi.h */,
 			);
@@ -432,6 +439,28 @@
 				38871A5825686AE018EC2BF0 /* libs */,
 			);
 			name = ofxOsc;
+			sourceTree = "<group>";
+		};
+		F212F78C1BB59D2200D2248A /* hnDmxMng */ = {
+			isa = PBXGroup;
+			children = (
+				F212F78D1BB59D2200D2248A /* .gitignore */,
+				F212F78E1BB59D2200D2248A /* src */,
+			);
+			name = hnDmxMng;
+			path = ../../../addons/hnDmxMng;
+			sourceTree = "<group>";
+		};
+		F212F78E1BB59D2200D2248A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F212F78F1BB59D2200D2248A /* Dmx.cpp */,
+				F212F7901BB59D2200D2248A /* Dmx.hpp */,
+				F212F7911BB59D2200D2248A /* hnDmxMng.cpp */,
+				F212F7921BB59D2200D2248A /* hnDmxMng.h */,
+				F212F7931BB59D2200D2248A /* portSetup.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 		F21913091BB3286500DC04B5 /* slOscManager */ = {
@@ -667,6 +696,7 @@
 				67FE4C7B15C2F0478C8126C2 /* NetworkingUtils.cpp in Sources */,
 				510CAFE035E576A4E1502D52 /* UdpSocket.cpp in Sources */,
 				F21914501BB3291100DC04B5 /* slAppManager.cpp in Sources */,
+				F212F7941BB59D2200D2248A /* Dmx.cpp in Sources */,
 				F21913641BB3286500DC04B5 /* Desitination.cpp in Sources */,
 				F21914711BB32D5F00DC04B5 /* ofApp.cpp in Sources */,
 				F219146E1BB32D2900DC04B5 /* Yagi.cpp in Sources */,
@@ -676,6 +706,7 @@
 				62545D179C94265CA1389D4A /* OscOutboundPacketStream.cpp in Sources */,
 				C4782ECC372420ACE0615B74 /* OscPrintReceivedElements.cpp in Sources */,
 				0546D1A38E13BD319CC9755B /* OscReceivedElements.cpp in Sources */,
+				F212F7951BB59D2200D2248A /* hnDmxMng.cpp in Sources */,
 				F21914761BB32DE600DC04B5 /* SeqManager.cpp in Sources */,
 				879A251454401BC0B6E4F238 /* OscTypes.cpp in Sources */,
 				F21914731BB32D6F00DC04B5 /* main.cpp in Sources */,
