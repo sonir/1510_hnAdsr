@@ -51,6 +51,12 @@ void ofApp::draw(){
     
     
     ofDrawBitmapString("fps = " + ofToString(ofGetFrameRate()), 10, 40);
+
+    string phase;
+    if(yagi.now_phase==VOID)phase = "VOID";
+    if(yagi.now_phase==CLIMAX)phase = "CLIMAX";
+    if(yagi.now_phase==ARRIVED)phase = "ARRIVED";
+    ofDrawBitmapString(phase, 10, 60);
     
 }
 
@@ -118,7 +124,8 @@ void ofApp::keyPressed(int key){
 //--------------------------------------------------------------
 void ofApp::keyReleased(int key){
 
-    if(key == 't')test();
+    if(key == 't')test();        
+    if(key == 'f')ofToggleFullscreen();
     
 }
 

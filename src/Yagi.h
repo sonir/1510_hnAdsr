@@ -10,7 +10,7 @@
 #define __yagiSys__Yagi__
 
 #define SC_WIDTH 1280
-#define SC_HEIGHT 720
+#define SC_HEIGHT 1080
 #define SC_MARGIN_WIDTH 100
 #define SC_MARGIN_HEIGHT 70
 #define SQUARE_SIZE 10.0f
@@ -28,7 +28,8 @@
 #include "SeqManager.h"
 #include "slAdsr.h"
 #include "setup.h"
-#include "Dmx.hpp"
+#include "hnDmxMng.h"
+#include "Preset.hpp"
 
 
 class YagiApp : public slAppManager, slObserver {
@@ -39,18 +40,15 @@ class YagiApp : public slAppManager, slObserver {
         void update();
         void draw();
         void event(event_type tag, void *param); //Invoke from slNotice
+        command_e now_phase = VOID;
 
     
     private:
-        void drawRects();
         void drawCircles();
-        void runLights();
         slNotice *notice;
-        slAdsr adsr[CIRCLE_NUM];
-        float adsr_now[CIRCLE_NUM];
         color_e sc_color;
-        Dmx dmx;
-
+        hnDmxMng output;
+        Preset preset;
     
 };
 

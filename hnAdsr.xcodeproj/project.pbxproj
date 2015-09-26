@@ -59,6 +59,7 @@
 		F21914711BB32D5F00DC04B5 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F219146F1BB32D5F00DC04B5 /* ofApp.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21914731BB32D6F00DC04B5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21914721BB32D6F00DC04B5 /* main.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21914761BB32DE600DC04B5 /* SeqManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21914741BB32DE600DC04B5 /* SeqManager.cpp */; settings = {ASSET_TAGS = (); }; };
+		F2B639091BB62DA100CF6CB7 /* Preset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B639071BB62DA100CF6CB7 /* Preset.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,7 +150,6 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		F212F78D1BB59D2200D2248A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F212F78F1BB59D2200D2248A /* Dmx.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dmx.cpp; sourceTree = "<group>"; };
 		F212F7901BB59D2200D2248A /* Dmx.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Dmx.hpp; sourceTree = "<group>"; };
 		F212F7911BB59D2200D2248A /* hnDmxMng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hnDmxMng.cpp; sourceTree = "<group>"; };
@@ -187,6 +187,8 @@
 		F21914721BB32D6F00DC04B5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F21914741BB32DE600DC04B5 /* SeqManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeqManager.cpp; sourceTree = "<group>"; };
 		F21914751BB32DE600DC04B5 /* SeqManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeqManager.h; sourceTree = "<group>"; };
+		F2B639071BB62DA100CF6CB7 /* Preset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Preset.cpp; sourceTree = "<group>"; };
+		F2B639081BB62DA100CF6CB7 /* Preset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Preset.hpp; sourceTree = "<group>"; };
 		F4F5B6B8BA2BD52C646ED908 /* OscException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscException.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h; sourceTree = SOURCE_ROOT; };
 		F7FBC56859535E597B24BB91 /* NetworkingUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NetworkingUtils.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h; sourceTree = SOURCE_ROOT; };
 		FC5DA1C87211D4F6377DA719 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tinyxmlparser.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
@@ -419,6 +421,8 @@
 				F21914631BB32D2900DC04B5 /* setup.h */,
 				F21914671BB32D2900DC04B5 /* Yagi.cpp */,
 				F21914681BB32D2900DC04B5 /* Yagi.h */,
+				F2B639071BB62DA100CF6CB7 /* Preset.cpp */,
+				F2B639081BB62DA100CF6CB7 /* Preset.hpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -444,7 +448,6 @@
 		F212F78C1BB59D2200D2248A /* hnDmxMng */ = {
 			isa = PBXGroup;
 			children = (
-				F212F78D1BB59D2200D2248A /* .gitignore */,
 				F212F78E1BB59D2200D2248A /* src */,
 			);
 			name = hnDmxMng;
@@ -691,6 +694,7 @@
 				F21913C71BB3289400DC04B5 /* slSequencer.cpp in Sources */,
 				F21913C61BB3289400DC04B5 /* SequenceData.cpp in Sources */,
 				F21913F21BB328F100DC04B5 /* slObserver.cpp in Sources */,
+				F2B639091BB62DA100CF6CB7 /* Preset.cpp in Sources */,
 				ADE367465D2A8EBAD4C7A8D9 /* IpEndpointName.cpp in Sources */,
 				F21913F11BB328F100DC04B5 /* slNotice.cpp in Sources */,
 				67FE4C7B15C2F0478C8126C2 /* NetworkingUtils.cpp in Sources */,
