@@ -59,6 +59,7 @@
 		F21914711BB32D5F00DC04B5 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F219146F1BB32D5F00DC04B5 /* ofApp.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21914731BB32D6F00DC04B5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21914721BB32D6F00DC04B5 /* main.cpp */; settings = {ASSET_TAGS = (); }; };
 		F21914761BB32DE600DC04B5 /* SeqManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F21914741BB32DE600DC04B5 /* SeqManager.cpp */; settings = {ASSET_TAGS = (); }; };
+		F2A60A621BB65F2B004E8BB9 /* hnOutUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2A60A601BB65F2B004E8BB9 /* hnOutUnit.cpp */; settings = {ASSET_TAGS = (); }; };
 		F2B639091BB62DA100CF6CB7 /* Preset.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F2B639071BB62DA100CF6CB7 /* Preset.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -165,7 +166,6 @@
 		F21913B61BB3289400DC04B5 /* SequenceData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SequenceData.h; sourceTree = "<group>"; };
 		F21913B71BB3289400DC04B5 /* slSequencer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slSequencer.cpp; sourceTree = "<group>"; };
 		F21913B81BB3289400DC04B5 /* slSequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slSequencer.h; sourceTree = "<group>"; };
-		F21913B91BB3289400DC04B5 /* stino.settings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = stino.settings; sourceTree = "<group>"; };
 		F21913E71BB328F100DC04B5 /* slNotice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slNotice.cpp; sourceTree = "<group>"; };
 		F21913E81BB328F100DC04B5 /* slNotice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = slNotice.h; sourceTree = "<group>"; };
 		F21913E91BB328F100DC04B5 /* slObserver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = slObserver.cpp; sourceTree = "<group>"; };
@@ -187,6 +187,9 @@
 		F21914721BB32D6F00DC04B5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F21914741BB32DE600DC04B5 /* SeqManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeqManager.cpp; sourceTree = "<group>"; };
 		F21914751BB32DE600DC04B5 /* SeqManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeqManager.h; sourceTree = "<group>"; };
+		F2A60A5E1BB65F2B004E8BB9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F2A60A601BB65F2B004E8BB9 /* hnOutUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hnOutUnit.cpp; sourceTree = "<group>"; };
+		F2A60A611BB65F2B004E8BB9 /* hnOutUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hnOutUnit.h; sourceTree = "<group>"; };
 		F2B639071BB62DA100CF6CB7 /* Preset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Preset.cpp; sourceTree = "<group>"; };
 		F2B639081BB62DA100CF6CB7 /* Preset.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Preset.hpp; sourceTree = "<group>"; };
 		F4F5B6B8BA2BD52C646ED908 /* OscException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscException.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h; sourceTree = SOURCE_ROOT; };
@@ -306,6 +309,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				F2A60A5D1BB65F2B004E8BB9 /* hnOutUnit */,
 				F212F78C1BB59D2200D2248A /* hnDmxMng */,
 				E6053AB7FEC63D5F83825B88 /* ofxOsc */,
 				F21913091BB3286500DC04B5 /* slOscManager */,
@@ -409,6 +413,7 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F21914631BB32D2900DC04B5 /* setup.h */,
 				F21914721BB32D6F00DC04B5 /* main.cpp */,
 				F21914741BB32DE600DC04B5 /* SeqManager.cpp */,
 				F21914751BB32DE600DC04B5 /* SeqManager.h */,
@@ -418,7 +423,6 @@
 				F21914601BB32D2900DC04B5 /* Osc.h */,
 				F21914611BB32D2900DC04B5 /* Receiver.cpp */,
 				F21914621BB32D2900DC04B5 /* Receiver.hpp */,
-				F21914631BB32D2900DC04B5 /* setup.h */,
 				F21914671BB32D2900DC04B5 /* Yagi.cpp */,
 				F21914681BB32D2900DC04B5 /* Yagi.h */,
 				F2B639071BB62DA100CF6CB7 /* Preset.cpp */,
@@ -520,7 +524,6 @@
 				F21913B61BB3289400DC04B5 /* SequenceData.h */,
 				F21913B71BB3289400DC04B5 /* slSequencer.cpp */,
 				F21913B81BB3289400DC04B5 /* slSequencer.h */,
-				F21913B91BB3289400DC04B5 /* stino.settings */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -578,6 +581,25 @@
 			children = (
 				F21914561BB3292E00DC04B5 /* slChrono.cpp */,
 				F21914571BB3292E00DC04B5 /* slChrono.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		F2A60A5D1BB65F2B004E8BB9 /* hnOutUnit */ = {
+			isa = PBXGroup;
+			children = (
+				F2A60A5E1BB65F2B004E8BB9 /* .gitignore */,
+				F2A60A5F1BB65F2B004E8BB9 /* src */,
+			);
+			name = hnOutUnit;
+			path = ../../../addons/hnOutUnit;
+			sourceTree = "<group>";
+		};
+		F2A60A5F1BB65F2B004E8BB9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F2A60A601BB65F2B004E8BB9 /* hnOutUnit.cpp */,
+				F2A60A611BB65F2B004E8BB9 /* hnOutUnit.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -690,6 +712,7 @@
 				640279EE111671BD026CB013 /* ofxOscReceiver.cpp in Sources */,
 				F21913821BB3287B00DC04B5 /* slAdsr.cpp in Sources */,
 				8F5205AEF8861EF234F0651A /* ofxOscSender.cpp in Sources */,
+				F2A60A621BB65F2B004E8BB9 /* hnOutUnit.cpp in Sources */,
 				F21913651BB3286500DC04B5 /* slOscManager.cpp in Sources */,
 				F21913C71BB3289400DC04B5 /* slSequencer.cpp in Sources */,
 				F21913C61BB3289400DC04B5 /* SequenceData.cpp in Sources */,

@@ -8,6 +8,7 @@
     "1CA2EA7120017114FF5037C184B83814F167DE79" : 0,
     "AA005C2C69B0D20EC1E9D7E90A120C805800A3B5" : 0,
     "936C4C533E1B285C3569FD6CA8AEDDB568D7ED66" : 0,
+    "ABBC57E0D85ACCDFD1398BEBFA64A048A051C9E2" : 0,
     "AAE45987D1576D77559EF4BA58EF35045C17012F" : 0,
     "E6EB165099FA61C229D10B144C113F95F6CEBFF1" : 0,
     "F85C5A1E125954477649E591811C670D129ADADA" : 0
@@ -18,6 +19,7 @@
     "1CA2EA7120017114FF5037C184B83814F167DE79" : "..\/..\/addons\/slNotice",
     "AA005C2C69B0D20EC1E9D7E90A120C805800A3B5" : "..\/..\/addons\/slOscManager",
     "936C4C533E1B285C3569FD6CA8AEDDB568D7ED66" : "hnAdsr\/",
+    "ABBC57E0D85ACCDFD1398BEBFA64A048A051C9E2" : "..\/..\/addons\/hnOutUnit",
     "AAE45987D1576D77559EF4BA58EF35045C17012F" : "..\/..\/addons\/hnDmxMng",
     "E6EB165099FA61C229D10B144C113F95F6CEBFF1" : "..\/..\/addons\/slSequencer",
     "F85C5A1E125954477649E591811C670D129ADADA" : "..\/..\/addons\/slChrono"
@@ -50,6 +52,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sonir\/hnDmxMng.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAE45987D1576D77559EF4BA58EF35045C17012F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sonir\/1510_hnOutUnit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABBC57E0D85ACCDFD1398BEBFA64A048A051C9E2"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/sonir\/slSequencer.git",

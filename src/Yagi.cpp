@@ -19,6 +19,8 @@ void YagiApp::setup(){
     //Setup Sequencer
     sqcr.setup();
     cout << "Yagi::setup" << endl;
+    
+//    output.setAds;
 
     
 }
@@ -26,8 +28,29 @@ void YagiApp::setup(){
 
 void YagiApp::update(){
     
+    
     sqcr.update();
     output.update();
+    
+    
+    adsr_t a;
+    note_t n;
+    n.phase=ARRIVED;
+    n.node=NODE_D;
+    n.amp=1.0;
+    n.adsr=a;
+    n.adsr_sound=a;
+    output.setAdsr(n); //Trigger
+    
+    
+//    command_e phase;
+//    node_e node;
+//    note_type_e type;
+//    float duration;
+//    adsr_t adsr;
+//    adsr_t adsr_sound;
+//    float amp;
+
     
 }
 
@@ -42,7 +65,7 @@ void YagiApp::drawCircles(){
     
     //draw circle
     for(int i=0; i<output.vals.size(); i++){
-        float adsr_val = output.getCurrent(i+1);
+        float adsr_val = output.getCurrent(i);
 
         ofSetColor(255*adsr_val,255*adsr_val,255*adsr_val,220*adsr_val);
 
