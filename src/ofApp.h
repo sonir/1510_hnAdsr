@@ -32,7 +32,10 @@ class ofApp : public ofBaseApp{
 
         //Deconstructor
         ~ofApp(){
+            cout << "Finish hnAdsr" << endl;
             system("killall Terminal");
+            yagi.mute();            
+            
         }
 
         YagiApp yagi;

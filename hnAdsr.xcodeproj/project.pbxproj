@@ -187,7 +187,6 @@
 		F21914721BB32D6F00DC04B5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F21914741BB32DE600DC04B5 /* SeqManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SeqManager.cpp; sourceTree = "<group>"; };
 		F21914751BB32DE600DC04B5 /* SeqManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeqManager.h; sourceTree = "<group>"; };
-		F2A60A5E1BB65F2B004E8BB9 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F2A60A601BB65F2B004E8BB9 /* hnOutUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hnOutUnit.cpp; sourceTree = "<group>"; };
 		F2A60A611BB65F2B004E8BB9 /* hnOutUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hnOutUnit.h; sourceTree = "<group>"; };
 		F2B639071BB62DA100CF6CB7 /* Preset.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Preset.cpp; sourceTree = "<group>"; };
@@ -588,7 +587,6 @@
 		F2A60A5D1BB65F2B004E8BB9 /* hnOutUnit */ = {
 			isa = PBXGroup;
 			children = (
-				F2A60A5E1BB65F2B004E8BB9 /* .gitignore */,
 				F2A60A5F1BB65F2B004E8BB9 /* src */,
 			);
 			name = hnOutUnit;
@@ -790,7 +788,7 @@
 					../../../addons/ofxXmlSettings/libs,
 					../../../addons/ofxXmlSettings/src,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",
@@ -834,7 +832,7 @@
 					../../../addons/ofxXmlSettings/libs,
 					../../../addons/ofxXmlSettings/src,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
 					"-lpthread",

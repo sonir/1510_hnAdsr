@@ -40,6 +40,7 @@ class YagiApp : public slAppManager, slObserver {
         void setup();
         void update();
         void draw();
+        void mute();
         void event(event_type tag, void *param); //Invoke from slNotice
         command_e now_phase = VOID;
 
@@ -53,4 +54,4 @@ class YagiApp : public slAppManager, slObserver {
     
 };
 
-#endif /* defined(__yagiSys__Yagi__) */
+#endif// /* defined(__yagiSys__Yagi__) */

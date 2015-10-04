@@ -15,6 +15,7 @@ void YagiApp::setup(){
     //Setup Event Manager
     notice = slNotice::instance();
     notice->addEvent("TRG_ADSR", this);
+    notice->addEvent("SET_OFFSET", this);    
     
     //Setup Sequencer
     sqcr.setup();
@@ -77,13 +78,24 @@ void YagiApp::drawCircles(){
         }
         float circle_y = CIRCLE_MARGIN*row+CIRCLE_MARGIN_TOP;
         ofCircle(circle_x, circle_y, CIRCLE_SIZE*adsr_val);
+        
+        //Disp, ParamID
         ofSetColor(128);
         ofDrawBitmapString(ofToString(i+1), circle_x, circle_y);
+        ofDrawBitmapString(ofToString(adsr_val), circle_x, circle_y+15);
         
     }
     
     
 }
+
+//--------------------------------------------------------------
+void YagiApp::mute(){
+    
+    output.allMute();    
+    
+}
+
 
 
 //--------------------------------------------------------------
@@ -91,10 +103,19 @@ void YagiApp::event(event_type tag, void *param){
 
     note_t *note = (note_t *)param;
     note_t tmp_note = *note;
-    
-    preset.setAdsr(&tmp_note);
-    output.setAdsr(tmp_note); //Trigger
     now_phase = tmp_note.phase;
+    
+    if(tag=="TRG_ADSR"){
+
+        preset.setAdsr(&tmp_note);
+        output.setAdsr(tmp_note); //Trigger
+
+    }else if(tag=="SET_OFFSET"){
+        
+        output.setOffset(tmp_note.node, tmp_note.type);
+        
+    }
+    
     
     
 }
